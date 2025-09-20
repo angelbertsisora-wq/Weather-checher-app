@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Checker App Group 7</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Checker App</h1>
+        
+        <div class="search-section">
+            <div class="search-input">
+                <input type="text" id="location" placeholder="Enter Location">
+                <button id="search">SUBMIT</button>
+            </div>
+        </div>
+        
+        <div class="sample-weather">
+            <div class="weather-card">
+                <h3>Location Name</h3>
+                <div class="temperature">29°C</div>
+                <div class="condition">Cloudy</div>
+            </div>
+            <div class="weather-card">
+                <h3>Location Name</h3>
+                <div class="temperature">17°C</div>
+                <div class="condition">Rainy</div>
+            </div>
+            <div class="weather-card">
+                <h3>Location Name</h3>
+                <div class="temperature">34°C</div>
+                <div class="condition">Clear Sky</div>
+            </div>
+            <div class="weather-card">
+                <h3>Location Name</h3>
+                <div class="temperature">33°C</div>
+                <div class="condition">Clear Sky</div>
+            </div>
+        </div>
+        
+        <div class="current-weather">
+            <h2>Current Weather</h2>
+            <div class="current-info">
+                <div>
+                    <h3 id="current-location">Location Name</h3>
+                    <div class="current-temp" id="current-temp">25°C</div>
+                    <div class="current-condition" id="current-condition">Cloudy</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="forecast-section">
+            <h2>7 Day Weather Forecast</h2>
+            <div class="forecast-grid">
+                <div class="forecast-day">
+                    <h4>Today</h4>
+                    <div class="day-forecast">
+                        <div class="weather-icon" id="day-icon-0">☀️</div>
+                        <span class="day-temp" id="day-temp-0">25°C</span>
+                    </div>
+                    <div class="night-forecast">
+                        <div class="weather-icon" id="night-icon-0">🌙</div>
+                        <span class="night-temp" id="night-temp-0">18°C</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <h4>Tomorrow</h4>
+                    <div class="day-forecast">
+                        <div class="weather-icon" id="day-icon-1">⛅</div>
+                        <span class="day-temp" id="day-temp-1">27°C</span>
+                    </div>
+                    <div class="night-forecast">
+                        <div class="weather-icon" id="night-icon-1">🌙</div>
+                        <span class="night-temp" id="night-temp-1">20°C</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <h4>Wed</h4>
+                    <div class="day-forecast">
+                        <div class="weather-icon" id="day-icon-2">🌧️</div>
+                        <span class="day-temp" id="day-temp-2">22°C</span>
+                    </div>
+                    <div class="night-forecast">
+                        <div class="weather-icon" id="night-icon-2">🌧️</div>
+                        <span class="night-temp" id="night-temp-2">16°C</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <h4>Thursday</h4>
+                    <div class="day-forecast">
+                        <div class="weather-icon" id="day-icon-3">☀️</div>
+                        <span class="day-temp" id="day-temp-3">30°C</span>
+                    </div>
+                    <div class="night-forecast">
+                        <div class="weather-icon" id="night-icon-3">🌙</div>
+                        <span class="night-temp" id="night-temp-3">22°C</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <h4>Friday</h4>
+                    <div class="day-forecast">
+                        <div class="weather-icon" id="day-icon-4">⛅</div>
+                        <span class="day-temp" id="day-temp-4">28°C</span>
+                    </div>
+                    <div class="night-forecast">
+                        <div class="weather-icon" id="night-icon-4">🌙</div>
+                        <span class="night-temp" id="night-temp-4">19°C</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <h4>Saturday</h4>
+                    <div class="day-forecast">
+                        <div class="weather-icon" id="day-icon-5">☀️</div>
+                        <span class="day-temp" id="day-temp-5">32°C</span>
+                    </div>
+                    <div class="night-forecast">
+                        <div class="weather-icon" id="night-icon-5">🌙</div>
+                        <span class="night-temp" id="night-temp-5">24°C</span>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <h4>Sunday</h4>
+                    <div class="day-forecast">
+                        <div class="weather-icon" id="day-icon-6">🌦️</div>
+                        <span class="day-temp" id="day-temp-6">26°C</span>
+                    </div>
+                    <div class="night-forecast">
+                        <div class="weather-icon" id="night-icon-6">🌙</div>
+                        <span class="night-temp" id="night-temp-6">17°C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
