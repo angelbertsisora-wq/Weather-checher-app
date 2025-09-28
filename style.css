@@ -1,0 +1,339 @@
+:root {
+  /* Portfolio Palette */
+  --portfolio-bg: #18181B;
+  --portfolio-primary: #6366F1;
+  --portfolio-accent: #A5B4FC;
+  --portfolio-text: #F4F4F5;
+  --portfolio-card: #232336;
+  --portfolio-secondary: #2E2E40;
+
+  /* Weather App Palette */
+  --weather-bg: #F8FAFC;
+  --weather-primary: #0EA5E9;
+  --weather-secondary: #38DBF8;
+  --weather-text-dark: #1E293B;
+  --weather-text-light: #F1F5F9;
+  --weather-accent: #F97316;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--portfolio-bg);
+  color: var(--portfolio-text);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* =========================
+   Typography
+   ========================= */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+p  { font-size: 1rem; color: var(--portfolio-text); }
+
+/* =========================
+   Navbar
+   ========================= */
+.navbar {
+  background: var(--portfolio-card);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--portfolio-text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--portfolio-primary);
+}
+
+/* =========================
+   Home Section
+   ========================= */
+.home-section {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: var(--portfolio-bg);
+}
+
+.main-title {
+  font-size: 3rem;
+  color: var(--portfolio-primary);
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.subtitle {
+  color: var(--portfolio-accent);
+  margin-bottom: 1rem;
+}
+
+.goal .highlight {
+  color: var(--portfolio-primary);
+  font-weight: bold;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.85rem 1.75rem;
+  background: var(--portfolio-primary);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.cta-button:hover {
+  background: var(--portfolio-accent);
+  transform: translateY(-2px);
+}
+
+/* =========================
+   About Section
+   ========================= */
+.about-section {
+  padding: 5rem 2rem;
+  background: var(--portfolio-card);
+  text-align: center;
+}
+
+.about-section h2 {
+  color: var(--portfolio-primary);
+  margin-bottom: 1.5rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-member {
+  background: var(--portfolio-secondary);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.team-member:hover {
+  transform: translateY(-6px);
+}
+
+.member-photo {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+/* =========================
+   Project Section
+   ========================= */
+.project-section {
+  padding: 5rem 2rem;
+  background: var(--portfolio-bg);
+}
+
+.project-section h2 {
+  color: var(--portfolio-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-info {
+  flex: 1 1 320px;
+}
+
+.project-description {
+  margin: 1rem 0;
+}
+
+.features ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.project-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--portfolio-primary);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.project-button:hover {
+  background: var(--portfolio-accent);
+  transform: translateY(-2px);
+}
+
+.project-preview {
+  flex: 1 1 260px;
+}
+
+.preview-card {
+  background: var(--portfolio-card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* =========================
+   Weather Section
+   ========================= */
+.weather-section {
+  padding: 5rem 2rem;
+  background: var(--weather-bg);
+  color: var(--weather-text-dark);
+}
+
+.weather-section h2 {
+  text-align: center;
+  color: var(--weather-primary);
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-input input {
+  padding: 0.75rem;
+  border: 2px solid var(--weather-primary);
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.search-input button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: var(--weather-primary);
+  color: var(--weather-text-light);
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.search-input button:hover {
+  background: var(--weather-secondary);
+  transform: scale(1.05);
+}
+
+.weather-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  flex: 1 1 220px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.sample-weather {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.current-weather {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+}
+
+.forecast-day {
+  background: var(--weather-text-light);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.forecast-day:hover {
+  transform: translateY(-4px);
+}
+
+.forecast-day h4 {
+  margin-bottom: 0.5rem;
+  color: var(--weather-accent);
+}
+
+/* =========================
+   Contact & Footer
+   ========================= */
+.contact-section {
+  padding: 5rem 2rem;
+  background: var(--portfolio-card);
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: var(--portfolio-primary);
+}
+
+.contact-details {
+  margin-top: 1rem;
+}
+
+.footer {
+  background: var(--portfolio-bg);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--portfolio-text);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
